@@ -1,3 +1,4 @@
+package pratica1;
 /*
 1.
 Crie uma classe Pessoa com atributos como nome, idade, e um método toString que represente esses atributos.
@@ -30,6 +31,7 @@ Crie uma classe ContaBancaria com propriedades como número da conta e saldo. Em
 
  */
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 
@@ -132,7 +134,60 @@ public class Main {
         System.out.println("*-----------------*");
 
         //4
-        
+        System.out.println("Media do preço dos Produtos");
+        ArrayList<Produto> lista1 = new ArrayList<>();
+        lista1.add(produto1);
+        lista1.add(produto2);
+        lista1.add(produto3);
+        lista1.add(produto4);
+        double somaValores = 0;
+        for (Produto valor : lista1){
+            somaValores += valor.getPreco();
+        }
+        double resultado = somaValores / lista1.size();
+        System.out.println("Media do preço dos Produtos: " + resultado);
+        System.out.println("------------------------------------------");
+
+        //5 corrigir
+        System.out.println("Aréa");
+        Quadrado quadrado = new Quadrado(17);
+        Circulo circulo = new Circulo(3);
+        ArrayList<Forma> lista2 = new ArrayList<>();
+        lista2.add(quadrado);
+        lista2.add(circulo);
+        for (Forma formas : lista2){
+            System.out.println("Aréa: "+ formas.calcularArea());
+        }
+        System.out.println("------------------------------------------");
+        System.out.println("");
+
+        //6 corrigir
+        ContaBancaria conta1 = new ContaBancaria(1, 200);
+        ContaBancaria conta2 = new ContaBancaria(2, 780);
+        ContaBancaria conta3 = new ContaBancaria(3, 550);
+        ContaBancaria conta4 = new ContaBancaria(4, 100);
+        ArrayList<ContaBancaria> listaConta =  new ArrayList<>();
+        listaConta.add(conta1);
+        listaConta.add(conta2);
+        listaConta.add(conta3);
+        listaConta.add(conta4);
+        // aqui foi criada uma variavel para receber os valores da primeira posição do Array;
+        ContaBancaria contaMaiorSaldo = listaConta.get(0);
+        for (ContaBancaria conta : listaConta){
+            if(conta.getSaldo() > contaMaiorSaldo.getSaldo()){
+                contaMaiorSaldo = conta;
+            }
+        }
+        System.out.println("Conta de maior saldo é: "+contaMaiorSaldo.getSaldo());
+        System.out.println("------------------------------------------");
+        System.out.println("");
+
+
+
+
+
+
+
 
 
 

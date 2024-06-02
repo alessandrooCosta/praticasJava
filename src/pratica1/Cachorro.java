@@ -1,3 +1,4 @@
+package pratica1;
 public class Cachorro extends Animal{
 
     private String tutor;

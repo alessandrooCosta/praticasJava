@@ -1,3 +1,4 @@
+package pratica1;
 public class Animal {
     private String nome;
     private int populacao;

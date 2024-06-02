@@ -1,3 +1,4 @@
+package pratica1;
 public class ProdutoPerecivel extends Produto{
 
     private String dataValidade;
