@@ -1,10 +1,12 @@
 package pratica2;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Titulo implements Comparable<Titulo>{
     private String titulo;
 
-    
-     public Titulo(String titulo){
+
+    public Titulo(String titulo){
         this.titulo = titulo;
 }
     
@@ -16,14 +18,15 @@ public class Titulo implements Comparable<Titulo>{
         this.titulo = titulo;
     }
 
-    public String toString(){
-        return "Titulo: "+getTitulo();
-    }
-
     @Override
     public int compareTo(Titulo outroTitulo) {
         return this.getTitulo().compareTo(outroTitulo.getTitulo());
     }
 
-    
+    @Override
+    public String toString() {
+        return "Titulo{" +
+                "titulo='" + titulo + '\'' +
+                '}';
+    }
 }
