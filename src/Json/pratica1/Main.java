@@ -1,4 +1,4 @@
-package pratica1;
+package Json.pratica1;
 /*
 1.
 Crie uma classe Pessoa com atributos como nome, idade, e um método toString que represente esses atributos.
@@ -31,7 +31,6 @@ Crie uma classe ContaBancaria com propriedades como número da conta e saldo. Em
 
  */
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Main {
 

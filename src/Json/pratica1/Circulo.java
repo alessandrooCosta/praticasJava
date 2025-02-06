@@ -1,4 +1,4 @@
-package pratica1;
+package Json.pratica1;
 public class Circulo implements Forma{
 
     private double raio;

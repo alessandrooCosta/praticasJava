@@ -8,7 +8,7 @@ e exiba a cotação atual de uma criptomoeda escolhida pelo usuário.
 3. Crie um programa Java que faça uma consulta à API do TheMealDB utilizando as classes HttpClient, HttpRequest e HttpResponse.
 Solicite ao usuário que insira o nome de uma receita e exiba as informações disponíveis sobre essa receita.
  */
-package pratica3;
+package Json.pratica3;
 
 import com.google.gson.Gson;
 

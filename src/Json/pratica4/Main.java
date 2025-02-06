@@ -11,16 +11,12 @@ Consulte a documentação da biblioteca Gson para flexibilizar a conversão.
 Crie uma classe Livro que contenha atributos como título, autor e um objeto representando a editora.
 Em seguida, implemente um programa que utiliza a biblioteca Gson para converter um JSON aninhado representando um livro em um objeto do tipo Livro.
 */
-package pratica4;
+package Json.pratica4;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -33,8 +29,11 @@ public class Main {
         Gson gsonBuilder = new GsonBuilder().setLenient().create();
         Pessoa pessoaRecord2 = gson.fromJson(json, Pessoa.class);
         System.out.println("Utilizando Gson Builder: "+pessoaRecord2);
-
-
-
+        //3
+        String novJson = "{\"autor\":\"Machado de Assis\",\"titulo\":\"Memorias postumas de Braz Cuba\",\"editora\":\"editoral nova\"}";
+        //Aqui eu criei o objeto que aponta pra Record;
+        Livroo livroo = gson.fromJson(novJson, Livroo.class);
+        Livro livro = new Livro(livroo);
+        System.out.println(livro);
     }
 }

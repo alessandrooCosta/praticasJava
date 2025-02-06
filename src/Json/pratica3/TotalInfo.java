@@ -1,4 +1,4 @@
-package pratica3;
+package Json.pratica3;
 
 import java.util.List;
 

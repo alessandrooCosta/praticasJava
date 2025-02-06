@@ -1,6 +1,4 @@
-package pratica2;
-
-import com.google.gson.annotations.SerializedName;
+package Json.pratica2;
 
 public class Titulo implements Comparable<Titulo>{
     private String titulo;

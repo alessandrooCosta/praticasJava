@@ -1,4 +1,4 @@
-package pratica1;
+package Json.pratica1;
 public class Cachorro extends Animal{
 
     private String tutor;

@@ -1,4 +1,4 @@
-package pratica1;
+package Json.pratica1;
 public class Quadrado implements Forma{
 
     private double lado;

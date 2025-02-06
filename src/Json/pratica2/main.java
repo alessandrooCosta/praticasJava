@@ -11,7 +11,7 @@ Adicione elementos e imprima a lista, mostrando que é possível trocar facilmen
 
 5. Modifique o Exercício 4 para declarar a variável de lista como a interface List, demonstrando o uso de polimorfismo.
  */
-package pratica2;
+package Json.pratica2;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -100,11 +100,5 @@ public class main {
         listaPolimorfica.add("Elemento A");
         listaPolimorfica.add("Elemento B");
         System.out.println("LinkedList: " + listaPolimorfica);
-    
-
-
-
-
-
     }
 }
