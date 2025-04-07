@@ -14,12 +14,14 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main (String[] args) {
-
         //- Leia uma data de nascimento do usuário e calcule sua idade.
         System.out.println("Informe a sua data de nascimento: ");
         Scanner scan = new Scanner(System.in);
@@ -45,10 +47,12 @@ public class Main {
         }
 
         //2. Gere uma lista com as datas dos próximos 10 dias a partir da data atual.
-        
-
-
-
-
+        LocalDate today = LocalDate.now();
+        System.out.println("Data atual: " + today.format(formatter));
+        ArrayList<LocalDate> listaDatas = new ArrayList<>();
+        for(int i = 1; i  <= 10; i++){
+            listaDatas.add(today.plusDays(i));
+        }
+        listaDatas.forEach(data -> System.out.println(data.format(formatter)));
     }
 }
