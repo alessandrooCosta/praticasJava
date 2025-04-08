@@ -2,7 +2,7 @@ package VertoresMatrizes.ex3;
 import java.util.Scanner;
 
 public class Main {
-    public static void Main(String args[]){
+    public static void main(String args[]){
 
         // 3. Faça um programa com um vetor com 10 elementos inteiros positivos. Permita que seja solicitado um determina
         // valor inteiro e posivito para ser procurado nesse vetor. Caso exista o programa deve exibir o indice no qual o valor esta posicionado.
